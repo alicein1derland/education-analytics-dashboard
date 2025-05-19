@@ -40,6 +40,11 @@ data = {
 # Create DataFrame
 students_df = pd.DataFrame(data)
 
+# Data Validation
+assert students_df['Age'].between(12, 18).all(), "Age values are out of bounds!"
+assert students_df['Attendance Rate'].between(0, 100).all(), "Attendance rates should be between 0 and 100!"
+assert students_df['Test Score'].between(0, 100).all(), "Test scores should be between 0 and 100!"
+
 # Display the first few rows of the dataset
 print(students_df.head())
 
