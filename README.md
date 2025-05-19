@@ -1,5 +1,5 @@
 # education-analytics-dashboard
-This project is currently being created. It is part of my learning portfolio. This dashboard is used to analyze student performance trends and identify at-risk groups. I focused on English language learners in a simulated high school environment.
+This project is currently being created. It is part of my learning portfolio. This dashboard is used to analyze student performance trends and identify at-risk groups. I focused on English language learners in a simulated secondary school (grades 7th to 12th) environment in Thailand.
 # Education Analytics Dashboard (DRAFT - BETA - In Progress)
 
 ## Objective
