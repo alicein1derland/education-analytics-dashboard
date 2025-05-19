@@ -13,7 +13,7 @@ Analyze and visualize student performance data to uncover patterns and support d
 - `README.md`: Project overview and instructions
 
 ## Tools & Libraries
-- Python 3.x
+- Python 3.13
 - pandas
 - numpy
 - seaborn
