@@ -1,9 +1,18 @@
-# education-analytics-dashboard
-This project is currently being created. It is part of my learning portfolio. This dashboard is used to analyze student performance trends and identify at-risk groups. I focused on English language learners in a simulated secondary school (grades 7th to 12th) environment in Thailand.
-# Education Analytics Dashboard (DRAFT - BETA - In Progress)
+## Education Analytics Dashboard (In Progress)
+**Started:** May 5, 2025 | **Part of my learning portfolio**
 
-## Objective
-Analyze and visualize student performance data to uncover patterns and support data-driven decisions in a secondary school setting.
+This project analyzes simulated student performance data from a secondary school environment (grades 7–12) in Northern Thailand. The dashboard explores trends affecting English language learners and provides visual tools to help educators and administrators understand and respond to those patterns.
+
+## Background
+Having worked as a teacher in Thailand for over six years, I often saw students—especially English language learners—struggle silently until it was too late to intervene. I created this dashboard to explore more efficient ways of identifying at-risk students early, using data as a lens to highlight those who might otherwise fall through the cracks.
+
+## Mission Statement
+The mission of this dashboard is to support educators in making proactive, data-informed decisions that improve outcomes for English language learners. By surfacing key performance trends and identifying at-risk groups, the tool aims to empower targeted, timely interventions in educational settings.
+
+## Core Questions
+* What are the prevailing performance trends over time?
+* How is performance distributed across different grades or class sections?
+* Which indicators are signaling that a student may be at risk?
 
 ## Project Structure
 - `data/`: Simulated dataset files (CSV)
@@ -20,37 +29,42 @@ Analyze and visualize student performance data to uncover patterns and support d
 - matplotlib
 - streamlit
 
-## Next Steps
+## My Next Steps
 1. Create simulated student data and store it in `data/student_performance.csv`
 2. Build an initial notebook to explore the data and generate insights
 3. Develop a Streamlit dashboard in `app.py`
 4. Include key visuals in the `images/` folder
 
 ---
+<!-- ## Design Decisions
+<! ---
+<! ## Installation
+<! To install the required Python packages, run:
 
-# app.py (Starter Template for Streamlit Dashboard)
+<! ```bash
+<! pip install pandas numpy seaborn matplotlib streamlit
 
-import streamlit as st
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
+<! # app.py (Starter Template for Streamlit Dashboard)
 
-# Load the data
-def load_data():
-    return pd.read_csv("data/student_performance.csv")
+<! import streamlit as st
+<! import pandas as pd
+<! import seaborn as sns
+<! import matplotlib.pyplot as plt
 
-# Streamlit app
-st.title("Education Analytics Dashboard")
-st.write("Explore student performance trends and insights")
+<! # Load the data
+<! def load_data():
+<!     return pd.read_csv("data/student_performance.csv")
 
-# Load and display data
-data = load_data()
-st.dataframe(data.head())
+<! # Streamlit app
+<! st.title("Education Analytics Dashboard")
+<! st.subheader("Analyzing trends to identify at-risk English language learners")
 
-# Plot: Score Distribution
-st.subheader("Test Score Distribution")
-fig, ax = plt.subplots()
-sns.histplot(data['test_score'], kde=True, ax=ax)
-st.pyplot(fig)
+<! # Load and display data
+<! data = load_data()
+<! st.dataframe(data.head())
 
-# More charts and filters coming soon...
+<! # Plot: Score Distribution
+<! st.subheader("Test Score Distribution")
+<! fig, ax = plt.subplots()
+<! sns.histplot(data['test_score'], kde=True, ax=ax)
+<! st.pyplot(fig)
